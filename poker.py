@@ -18,8 +18,6 @@ class Deck:
 
     def shuffle_deck(self):
         self.deck = random.sample(self.deck, len(self.deck))
-        print(self.deck)
-
         return self.deck
 
     def get_hand(self):
@@ -30,9 +28,4 @@ class Deck:
         return self.hand
 
 
-my_deck = Deck()
-for i in range(10):
-    print()
-    my_deck.get_hand()
-    print(my_deck.hand)
-    print(len(my_deck.deck))
+
